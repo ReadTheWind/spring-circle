@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @ClassName: MyBeanFactoryPostProcessor
  * @Description:
  */
-//@Component
+@Component
 public class MyBeanFactoryPostProcessor  implements BeanFactoryPostProcessor {
 
     @Override

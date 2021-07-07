@@ -7,7 +7,5 @@ package com.example.demo.service;
  * @Description:
  */
 public interface AService {
-
     void a();
-
 }

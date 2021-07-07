@@ -4,6 +4,7 @@ import com.example.demo.service.AService;
 import com.example.demo.service.BService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 /**
@@ -22,10 +23,10 @@ public class BServiceImpl implements BService {
     @Autowired
     BService self;
 
-
+    @Async
     @Override
     public void b() {
-//        self.b();
         aService.a();
+        self.b();
     }
 }

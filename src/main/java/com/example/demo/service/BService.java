@@ -10,7 +10,5 @@ import org.springframework.validation.annotation.Validated;
  */
 @Validated
 public interface BService {
-
     void b();
-
 }

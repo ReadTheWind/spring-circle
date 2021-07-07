@@ -3,7 +3,6 @@ package com.example.demo.service.impl;
 import com.example.demo.service.AService;
 import com.example.demo.service.BService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,8 +13,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AServiceImpl implements AService {
-
-
     @Autowired
     BService bService;
 
